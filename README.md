@@ -4,19 +4,22 @@
 
 ## Dependencies
 
-This script uses node (v14).
+- node (v14).
 
 ## Installation
 
-Clone this repo to run it locally.
+Clone the repo to run it locally.
 
 ## Usage
 
-`node process-county-data.js <filename>`
-
 The script requires a CSV file with a header row and `STNAME` and `CTYNAME` columns. It outputs a JSON file containing the state/county map to `./output/county-map.json`.
 
-To run the script with a sample file found in `./sample_files/`:
+To run:
+
+`node process-county-data.js <filename>`
+
+
+A sample Census csv containing county data from 2020 can be found in `./sample_files/`. To run with sample file:
 
 `node process-county-data.js sample_files/co-est2020.csv`
 
